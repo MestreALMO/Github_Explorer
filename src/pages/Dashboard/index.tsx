@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import api from '../../services/api';
 
@@ -20,7 +20,27 @@ const Dashboard: React.FC = () => {
   // eslint-disable-next-line prettier/prettier
   const [newRepo, setNewRepo] = useState(''); /** Estado só pra armazenar valor do input */
   const [inputError, setInputError] = useState('');
-  const [repositories, setRepositories] = useState<Repository[]>([]);
+
+  const [repositories, setRepositories] = useState<Repository[]>(() => {
+    const storagedRepositories = localStorage.getItem(
+      '@GithubExplorer:repositories',
+    );
+
+    if (storagedRepositories) {
+      return JSON.parse(storagedRepositories);
+    }
+    return [];
+  });
+
+  useEffect(() => {
+    // eslint-disable-next-line no-unused-expressions
+    localStorage.setItem(
+      '@GithubExplorer:repositories',
+      JSON.stringify(repositories),
+      // eslint-disable-next-line no-sequences
+    ),
+      [repositories];
+  });
 
   async function handleAddRepository(
     event: FormEvent<HTMLFormElement>,
