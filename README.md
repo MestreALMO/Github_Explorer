@@ -8,7 +8,7 @@
   <h3 align="center">Github_Explorer</h3>
 </p>
 
-This is a project of mine that display information of projects of GitHub. The information this application return is 100% accurate as this project was made by getting and displaying the information from the [GitHub API](https://api.github.com/).
+This is a project of mine that display information of projects of GitHub. The information this application returns is 100% accurate as this project was made by getting and displaying the information from the [GitHub API](https://api.github.com/).
 
 </br>
 
