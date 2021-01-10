@@ -78,7 +78,7 @@ const Repository: React.FC = () => {
             </li>
             <li>
               <strong>{repository.open_issues_count}</strong>
-              <span>Issues abertas</span>
+              <span>Issues openned</span>
             </li>
             <li>
               <strong>{repository.stargazers_count}</strong>
