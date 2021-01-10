@@ -82,6 +82,8 @@ When running for the first time we need to run the following code in a terminal 
 yarn
 ```
 
+</br>
+
 ### Running
 
 In a terminal inside the project folder use the code:
