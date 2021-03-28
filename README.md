@@ -11,7 +11,7 @@
 This is a project of mine that display information of projects of GitHub. The information this application returns is 100% accurate as this project was made by getting and displaying the information from the [GitHub API](https://api.github.com/).
 
 <p align="center">
-  <img src="https://github.com/MestreALMO/Github_Explorer/blob/master/_README.md/app.gif?raw=true" />
+  <img src="_README.md/app.gif">
 </p>
 
 </br>
