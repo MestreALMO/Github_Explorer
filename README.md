@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a>
     <img src="_README.md/icon.png?" alt="Logo" width="80" height="80">
   </a>
 
@@ -9,6 +9,10 @@
 </p>
 
 This is a project of mine that display information of projects of GitHub. The information this application returns is 100% accurate as this project was made by getting and displaying the information from the [GitHub API](https://api.github.com/).
+
+<p align="center">
+  <img src="_README.md/app.gif">
+</p>
 
 </br>
 
@@ -44,7 +48,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The things you need to install the software and how to install them
 
 * [Nodejs](https://nodejs.org/en/) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * Chocolatey - Chocolatey is software management automation for Windows that wraps installers, executables, zips, and scripts into compiled packages.
