@@ -3,8 +3,8 @@ import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import api from '../../services/api';
-import logoImg from '../../assets/logo.svg';
 import { Title, Form, Repositories, Error } from './styles';
+import { GithubExplorerHeader } from '../../components/GithubExplorerHeader';
 
 interface Repository {
   /** Nem tudo que retorna precisa ser colocado na tipagem, cria a tipagem só do que será utilizado */
@@ -68,15 +68,15 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <img src={logoImg} alt="Github Explorer" />
-      <Title>Explore repositorys in Github</Title>
+      <GithubExplorerHeader />
+      <Title>Explore Github Repositorys</Title>
 
       <Form hasError={!!inputError} onSubmit={handleAddRepository}>
         <input
           value={newRepo}
           // eslint-disable-next-line prettier/prettier
           onChange={(e) => setNewRepo(e.target.value)}
-          placeholder="Digit name of repository"
+          placeholder="Digit: ''Account''/''Repositorys_name''"
         />
         <button type="submit">Research</button>
       </Form>
